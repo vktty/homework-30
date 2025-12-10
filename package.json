@@ -1,0 +1,19 @@
+{
+  "name": "homework-30",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "isValidEmail.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
