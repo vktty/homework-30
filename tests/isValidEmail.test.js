@@ -1,6 +1,12 @@
 const isValidEmail = require('../functions/isValidEmail')
 
 describe('testing emails', () => {
+    test('example@example.com will be true', () => {
+        expect(isValidEmail('example@example.com')).toBeTruthy()
+    })
+    test('invalid-email will be false', () => {
+        expect(isValidEmail('invalid-email')).toBeFalsy()
+    })
     test('email will be invalid without @', () => {
         expect(isValidEmail('email-without-the-symbol.com')).toBeFalsy()
     })

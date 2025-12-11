@@ -6,4 +6,4 @@ function isValidUrl(url) {
 console.log(isValidUrl('https://www.example.com')) // Повинно вивести: true
 console.log(isValidUrl('invalid-url'))             // Повинно вивести: false
 
-module.exports = {isValidUrl}
+module.exports = isValidUrl

@@ -1,6 +1,12 @@
 const isValidUrl = require('../functions/isValidUrl')
 
 describe('url testing', () => {
+    test('https://www.example.com will be true', () => {
+        expect(isValidUrl('https://www.example.com')).toBeTruthy()
+    })
+    test('invalid-url will be false', () => {
+        expect(isValidUrl('invalid-url')).toBeFalsy()
+    })
     test('url will be valid using https', () => {
         expect(isValidUrl('https://www.example.com')).toBeTruthy()
     })
